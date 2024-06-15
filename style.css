@@ -34,6 +34,7 @@ h1 {
 
 #scenario {
     margin-bottom: 20px;
+    font-size: x-large;
 }
 
 #options {
@@ -53,6 +54,7 @@ button.option-button {
     margin: 5px 0;
     cursor: pointer;
     width: 100%;
+    font-size: large;
 }
 
 button.option-button:hover {
@@ -64,6 +66,7 @@ button.option-button:hover {
     padding: 10px;
     margin-top: 5px;
     text-align: center;
+    font-size: large;
 }
 
 #result {
