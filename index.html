@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選擇冒險遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>選擇冒險遊戲</h1>
+        <div id="resources">
+            食物：<span id="food">10</span> <br>
+            精力：<span id="energy">10</span> <br>
+            時間：<span id="time">0</span>
+        </div>
+        <div id="game">
+            <div id="scenario">
+                <p id="scenarioText">情境將顯示在這裡</p>
+            </div>
+            <div id="options">
+                <!-- 選項按鈕將顯示在這裡 -->
+            </div>
+        </div>
+
+        <div id="challengeModal" class="modal">
+        <div class="modal-content">
+            <span id="close-button">&times;</span>
+            <p id="challengeText"></p>
+            <button id="challengeCompleteButton">完成挑戰</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="scenario.js"></script>
+</html>
