@@ -18,16 +18,6 @@ h1 {
     text-align: center;
 }
 
-#resources {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #e9ecef;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 #game {
     margin-top: 50px;
 }
@@ -123,4 +113,31 @@ button.option-button:hover {
 
 #challengeCompleteButton:hover {
     background-color: #218838;
+}
+
+/* 電腦 */
+@media screen and (min-width: 500px) {
+  #resources {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #e9ecef;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+}
+
+/* 手機 */
+@media screen and (max-width: 500px) {
+  #resources {
+      background-color: #e9ecef;
+      margin-left: auto;
+      margin-right: 0px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: fit-content;
+      text-align: center;
+  }
 }
