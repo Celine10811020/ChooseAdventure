@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>迷宮</title>
+</head>
+<body>
+  <div class="container">
+    <canvas id="mazeCanvas"></canvas>
+  </div>
+  <div class="button-container">
+    <button id="clear" class="button">重新開始</button>
+    <button id="done" class="button">完成</button>
+  </div>
+</body>
+
+<script src="main.js"></script>
+<script>
+  $(document).bind("contextmenu copy selectstart", function() {
+    return false;
+  });
+</script>
+
+</html>

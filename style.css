@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ margin: 0;
+ padding: 0;
 }
 
 .container {
@@ -15,129 +15,154 @@ body {
 }
 
 h1 {
-    text-align: center;
+ text-align: center;
 }
 
 #game {
-    margin-top: 50px;
+ margin-top: 50px;
 }
 
 #scenario {
-    margin-bottom: 20px;
-    font-size: x-large;
+ margin-bottom: 20px;
+ font-size: x-large;
 }
 
 #options {
-    display: flex;
-    flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
 
 .option-container {
-    margin-bottom: 30px;
+ margin-bottom: 30px;
 }
 
 button.option-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    width: 100%;
-    font-size: large;
+ background-color: #007bff;
+ color: white;
+ border: none;
+ padding: 10px;
+ margin: 5px 0;
+ cursor: pointer;
+ width: 100%;
+ font-size: large;
 }
 
 button.option-button:hover {
-    background-color: #0056b3;
+ background-color: #0056b3;
 }
 
 .consequence {
-    background-color: #e9ecef;
-    padding: 10px;
-    margin-top: 5px;
-    text-align: center;
-    font-size: large;
+ background-color: #e9ecef;
+ padding: 10px;
+ margin-top: 5px;
+ text-align: center;
+ font-size: large;
 }
 
 #result {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e9ecef;
-    border-left: 5px solid #007bff;
+ margin-top: 20px;
+ padding: 10px;
+ background-color: #e9ecef;
+ border-left: 5px solid #007bff;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+ display: none;
+ position: fixed;
+ z-index: 1000;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
+.modalContent {
+ background-color: white;
+ margin: 15% auto;
+ padding: 20px;
+ border: 1px solid #888;
+ width: 80%;
+ max-width: 500px;
+ text-align: center;
 }
 
-#close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.closeButton {
+ color: #aaa;
+ float: right;
+ font-size: 28px;
+ font-weight: bold;
 }
 
-#close-button:hover,
-#close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.closeButton:hover,
+.closeButton:focus {
+ color: black;
+ text-decoration: none;
+ cursor: pointer;
 }
 
 #challengeCompleteButton {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
+ background-color: #28a745;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ margin-top: 20px;
+ cursor: pointer;
 }
 
 #challengeCompleteButton:hover {
-    background-color: #218838;
+ background-color: #218838;
+}
+
+.showImg {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+}
+.closeImg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.showVedioContent {
+  width: 560px;
+  height: 315px;
 }
 
 /* 電腦 */
 @media screen and (min-width: 500px) {
   #resources {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #e9ecef;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   background-color: #e9ecef;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
   }
 }
 
 /* 手機 */
 @media screen and (max-width: 500px) {
   #resources {
-      background-color: #e9ecef;
-      margin-left: auto;
-      margin-right: 0px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: fit-content;
-      text-align: center;
+   background-color: #e9ecef;
+   margin-left: auto;
+   margin-right: 0px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: fit-content;
+   text-align: center;
   }
 }
