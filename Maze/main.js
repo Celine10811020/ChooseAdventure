@@ -47,8 +47,8 @@ clear.addEventListener('click', () => {
 
 canvas.addEventListener('touchstart', (e) => {
   e.preventDefault();
-  const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
-  const touchY = e.touches[0].clientY - canvas.getBoundingClientRect().top;
+  const touchX = e.touches[0].clientX ;//- canvas.getBoundingClientRect().left;
+  const touchY = e.touches[0].clientY ;//- canvas.getBoundingClientRect().top;
   drawing = true;
   ctx.beginPath();
   ctx.moveTo(touchX, touchY);
@@ -57,8 +57,8 @@ canvas.addEventListener('touchstart', (e) => {
 canvas.addEventListener('touchmove', (e) => {
   e.preventDefault();
   if (drawing) {
-    const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
-    const touchY = e.touches[0].clientY - canvas.getBoundingClientRect().top;
+    const touchX = e.touches[0].clientX ;//- canvas.getBoundingClientRect().left;
+    const touchY = e.touches[0].clientY ;//- canvas.getBoundingClientRect().top;
     ctx.lineTo(touchX, touchY);
     ctx.stroke();
   }
